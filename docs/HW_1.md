@@ -59,7 +59,7 @@
 </div>
 
 <div markdown>
-- **dvantages**
+- **Advantages**
     * Highest dexterity (reach around obstacles).
     * Adaptable to various geometric spaces.
 - **Disadvantages**
