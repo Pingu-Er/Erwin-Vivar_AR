@@ -74,9 +74,12 @@
 
 <div class="grid" markdown>
 <div markdown>
-![WIP](recursos/imgs/robotics-wip-placeholder.png)
 
-*Chamoy*
+<div style="text-align:center;">
+  <img src="../recursos/imgs/RRP.jpg" alt="RRP" style="max-height:320px; width:auto;">
+</div>
+
+*A manipulator designed by Victor Scheinman at Stanford (1969). It uses two revolute joints plus a long prismatic “telescoping” link (RRP) to sweep a distinctly spherical/polar workspace.*
 
 </div>
 
@@ -148,7 +151,7 @@
 
     [4] Universal Robots, “UR5e e-Series datasheet,” Universal Robots, PDF. Accessed: Jan. 27, 2026. [Online]. Available: https://www.universal-robots.com/media/1807465/ur5e_e-series_datasheets_web.pdf
 
-    [5] A. G. Reiss, “Key factors used to classify industrial robots,” *DigiKey*, Apr. 16, 2024. Accessed: Jan. 27, 2026. [Online]. Available: https://www.digikey.com/en/articles/what-are-the-key-factors-used-to-classify-industrial-robots
+    [5] Stanford University, “Stanford’s robotics legacy,” Stanford News, Jan. 16, 2019, accessed Jan. 27, 2026. [Online]. Available: https://news.stanford.edu/2019/01/16/stanfords-robotics-legacy/
 
     [6] JEL Corporation, “Products | MCR3160C | Wafer Transfer Atmospheric Robot,” *jel-robot.com*. Accessed: Jan. 27, 2026. [Online]. Available: https://www.jel-robot.com/products/MCR3160C.html
 
