@@ -1,4 +1,4 @@
-# Ejemplo de Documentación del Proyecto
+# Project example (WP)
 
 > Plantilla genérica para documentar proyectos académicos o de ingeniería.  
 > Copia y adapta las secciones según tu necesidad.

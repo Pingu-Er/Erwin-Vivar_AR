@@ -1,4 +1,4 @@
-site_name: Plantilla para Documentación
+site_name: Erwin-Vivar (197976)
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
