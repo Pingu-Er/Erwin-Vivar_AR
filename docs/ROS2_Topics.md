@@ -1,4 +1,4 @@
-# Activity 1 — ROS 2 Topics
+# Activity 1: ROS 2 Topics
 
 ## Overview
 
