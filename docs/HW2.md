@@ -193,7 +193,7 @@ $$
 \begin{bmatrix}
 1 & 0 & 0 & 0\\
 0 & \cos -30^\circ & -\sin -30^\circ  & 0\\
-0 & -\sin -30^\circ  & \cos -30^\circ & 0\\
+0 & \sin -30^\circ  & \cos -30^\circ & 0\\
 0 & 0 & 0 & 1
 \end{bmatrix}
 $$
