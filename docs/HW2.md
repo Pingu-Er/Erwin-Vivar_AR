@@ -135,4 +135,75 @@ $$
 
 ## Exercise 3
 
-Si pozole gor gor
+![WIP](recursos/imgs/HW_mat_1/Ex_img.png)
+
+This exercise is divided into two parts:
+
+1. A translation and rotation from point \(\mathbf{A}\) to point \(\mathbf{B}\)
+2. A translation and rotation from point \(\mathbf{A}\) to point \(\mathbf{C}\)
+
+
+
+**Definition of homogeneous transformation matrix (from A to B)**
+
+The homogeneous transformation matrix is equivalent to translating 3 units along the \(\hat{\mathbf{X}}_{A}\) axis and then applying a 180° rotation around the \(\hat{\mathbf{Z}}_{A}\) axis. Mathematically, this is:
+
+$$
+^{B}_{A}\mathbf{T}=
+\begin{bmatrix}
+1 & 0 & 0 & 3\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1
+\end{bmatrix}
+\begin{bmatrix}
+\cos 180^\circ & -\sin 180^\circ & 0 & 0\\
+\sin 180^\circ & \cos 180^\circ & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1
+\end{bmatrix}=
+\begin{bmatrix}
+-1 & 0 & 0 & 3\\
+0 & -1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1
+\end{bmatrix}
+$$
+
+**Definition of homogeneous transformation matrix (from A to C)**
+
+The homogeneous transformation matrix is equivalent to translating 3 units along the \(\hat{\mathbf{X}}_{A}\) and 2 units along the \(\hat{\mathbf{Z}}_{A}\) axis. Then applying a 90° rotation around the \(\hat{\mathbf{Y}}_{A}\) axis and finally a -30° rotation around the \(\hat{\mathbf{X}}_{A}\).Mathematically, this is:
+
+$$
+^{C}_{A}\mathbf{T}=
+\begin{bmatrix}
+1 & 0 & 0 & 3\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 2\\
+0 & 0 & 0 & 1
+\end{bmatrix}
+\begin{bmatrix}
+\cos 90^\circ & 0 & \sin 90^\circ & 0\\
+0 & 1 & 0 & 0\\
+-\sin 90^\circ & 0 & \cos 90^\circ & 0\\
+0 & 0 & 0 & 1
+\end{bmatrix}
+\begin{bmatrix}
+1 & 0 & 0 & 0\\
+0 & \cos -30^\circ & -\sin -30^\circ  & 0\\
+0 & -\sin -30^\circ  & \cos -30^\circ & 0\\
+0 & 0 & 0 & 1
+\end{bmatrix}
+$$
+
+Simplifying:
+
+$$
+^{C}_{A}\mathbf{T}=
+\begin{bmatrix}
+0 & -0.5 & 0.866 & 3\\
+0 & 0.866 & 0.5 & 0\\
+-1 & 0 & 0 & 2\\
+0 & 0 & 0 & 1
+\end{bmatrix}
+$$
