@@ -135,7 +135,9 @@ $$
 
 ## Exercise 3
 
-![WIP](recursos/imgs/HW_mat_1/Ex_img.png)
+<div style="text-align:center;">
+  <img src="../recursos/imgs/HW_mat_1/Ex_img.png" alt="RRP" style="max-height:320px; width:auto;">
+</div>
 
 This exercise is divided into two parts:
 
