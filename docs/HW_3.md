@@ -76,20 +76,31 @@ T_0_N = T{end};
 disp("=== T_0_N (end-effector pose) ===");
 disp(T_0_N);
 ```
+
+It is important to note that a link length of 1 was assumed for every link whenever its length could not be considered negligible. Additionally, the script was evaluated using the initial configuration, $q=0$. These assumptions were adopted to keep the focus strictly on the kinematic analysis of the robots and on the systematic generation of Denavit–Hartenberg transformation matrices.
+
 ## Excersice 1
 
 <div style="text-align:center;">
   <img src="../recursos/imgs/HW3/E1.png" alt="RRP" style="max-height:320px; width:auto;">
 </div>
 
-Result (image of planes, origins, axis, links):
+*Result (image of planes, origins, axis, links):*
 
 <div style="text-align:center;">
   <img src="../recursos/imgs/HW3/S1.png" alt="RRP" style="max-height:320px; width:auto;">
 </div>
 
+**DH parameters**
+
+| L | a         | α         | θ              | d                  |
+|---:|:----------|:----------|:---------------|:-------------------|
+| 1 | $l_{1.2}$  | $-\pi/2$  | $-\pi/2 + q_1$ | $0$                |
+| 2 | $0$        | $0$       | $0$            | $l_{1.1}+l_2+q_2$   |
+
+**DH after sustitution (script):** 
+
 $$
-\textbf{DH after sustitution:  }
 \begin{array}{c c c c c}
 a & \alpha & d & \theta\\ \hline
 1 & -1.5708 & 0 & -1.5708\\
@@ -134,18 +145,26 @@ $$
   <img src="../recursos/imgs/HW3/E2.png" alt="RRP" style="max-height:320px; width:auto;">
 </div>
 
-Result (image of planes, origins, axis, links):
+*Result (image of planes, origins, axis, links):*
 
 <div style="text-align:center;">
   <img src="../recursos/imgs/HW3/S2.png" alt="RRP" style="max-height:320px; width:auto;">
 </div>
 
+**DH parameters**
+
+| L | a   | α       | θ       | d            |
+|---:|:----|:--------|:--------|:-------------|
+| 1 | $0$ | $\pi/2$ | $\pi/2$ | $l_1 + q_1$  |
+| 2 | $0$ | $\pi/2$ | $\pi/2$ | $l_2 + q_2$  |
+| 3 | $0$ | $\pi$   | $0$     | $l_3 + q_3$  |
+
+**DH after sustitution (script):** 
+ 
 $$
-\textbf{DH after sustitution:  }
 \begin{array}{c c c c c}
 a & \alpha & d & \theta &\\ \hline
-0 & 1.5708 & 1 & 1.5708 &\\
-0 & 1.5708 & 1 & 1.5708 &\\
+0 & 1.5708 & 1 & 1.5708 &\\646
 0 & 3.1416 & 1 & 0 &
 \end{array}
 $$
@@ -196,14 +215,26 @@ $$
   <img src="../recursos/imgs/HW3/E3.png" alt="RRP" style="max-height:320px; width:auto;">
 </div>
 
-Result (image of planes, origins, axis, links):
+*Result (image of planes, origins, axis, links):*
 
 <div style="text-align:center;">
   <img src="../recursos/imgs/HW3/S3.png" alt="RRP" style="max-height:320px; width:auto;">
 </div>
 
+**DH parameters**
+
+| L | a     | α        | θ            | d            |
+|---:|:------|:---------|:-------------|:-------------|
+| 1 | $0$   | $-\pi/2$ | $q_1$        | $l_1$        |
+| 2 | $l_2$ | $0$      | $q_2$        | $0$          |
+| 3 | $0$   | $\pi/2$  | $\pi/2+q_3$  | $0$          |
+| 4 | $0$   | $-\pi/2$ | $\pi/2+q_4$  | $l_3+l_4$    |
+| 5 | $0$   | $\pi/2$  | $q_5$        | $0$          |
+| 6 | $0$   | $0$      | $q_6$        | $l_5+l_6$    |
+
+**DH after sustitution (script):**
+
 $$
-\textbf{DH after sustitution:  }
 \begin{array}{c c c c c}
 a & \alpha & d & \theta\\ \hline
 0 & -1.5708 & 1 & 0\\
@@ -287,14 +318,26 @@ $$
   <img src="../recursos/imgs/HW3/E4.png" alt="RRP" style="max-height:320px; width:auto;">
 </div>
 
-Result (image of planes, origins, axis, links):
+*Result (image of planes, origins, axis, links):*
 
 <div style="text-align:center;">
   <img src="../recursos/imgs/HW3/S4.png" alt="RRP" style="max-height:320px; width:auto;">
 </div>
 
+**DH parameters**
+
+| L | $d_z$  | a   | α        | Θ              |
+|---:|:-------|:----|:---------|:---------------|
+| 1 | $l_1$  | $0$ | $-\pi/2$ | $q_1$          |
+| 2 | $0$    | $l_2$ | $0$    | $q_2$          |
+| 3 | $-l_3$ | $0$ | $\pi/2$  | $\pi/2+q_3$    |
+| 4 | $l_4$  | $0$ | $-\pi/2$ | $q_4$          |
+| 5 | $0$    | $0$ | $\pi/2$  | $-\pi/2+q_5$   |
+| 6 | $l_6$  | $0$ | $0$      | $q_6$          |
+
+**DH after sustitution (script):**  
+
 $$
-\textbf{DH after sustitution:  }
 \begin{array}{c c c c c}
 a & \alpha & d & \theta\\ \hline
 0 & -1.5708 & 1  & 0\\
@@ -378,15 +421,27 @@ $$
   <img src="../recursos/imgs/HW3/E5.png" alt="RRP" style="max-height:320px; width:auto;">
 </div>
 
-Result (image of planes, origins, axis, links):
+*Result (image of planes, origins, axis, links):*
 
 <div style="text-align:center;">
   <img src="../recursos/imgs/HW3/S5.png" alt="RRP" style="max-height:320px; width:auto;">
 </div>
 
+**DH parameters**
+
+| L | $d_z$ | a     | α        | θ              |
+|---:|:------|:------|:---------|:---------------|
+| 1 | $0$   | $0$   | $\pi/2$  | $\pi/2+q_1$    |
+| 2 | $0$   | $l_2$ | $-\pi/2$ | $\pi/2+q_2$    |
+| 3 | $0$   | $0$   | $\pi/2$  | $q_3$          |
+| 4 | $l_4$ | $0$   | $\pi/2$  | $q_4$          |
+| 5 | $0$   | $0$   | $-\pi/2$ | $q_5$          |
+| 6 | $l_6$ | $0$   | $0$      | $-\pi/2+q_6$   |
+
+**DH after sustitution (script):**
+
 $$
-\textbf{DH after substitution:  }
-\begin{array}{c c c c c}
+\begin{array}{c c c c}
 a & \alpha & d & \theta\\ \hline
 0 & 1.5708  & 0 & 1.5708\\
 1 & 1.5708  & 0 & 1.5708\\
