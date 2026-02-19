@@ -1,4 +1,4 @@
-# Homework 3: Forward Kinematics
+# (HW3) Homework 3: Forward Kinematics
 For the following problems, we used Matlab to solve all the matrices. The script calculates the matrices both individually (between each frame) and calculates the homogeneous transformation matrix between frame 0 and the frame associated with the final element of the robot.
 
 The Matlab script was the following:

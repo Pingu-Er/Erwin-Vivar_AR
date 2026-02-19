@@ -1,4 +1,4 @@
-# Homework 1: Examples of robots by morphology
+# (HW1) Homework 1: Examples of robots by morphology
 
 ## Cartesian (PPP)
 <div class="grid" markdown>
